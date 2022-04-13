@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+
+    padding: 12px 0px;
+    background-color: #262626;
+
+}
+
+.navbar {
+    Display: flex;
+    justify-content: space-evenly;
+    margin: 0px 376px;
+    position: relative;
+    left: -315px;
+    padding: 0px 13px;
+    font-size: small;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, sans-serif;
+}
+
+a:hover {
+    color: aliceblue;
+}
+
+a.Download {
+    color: red;
+    font-weight: bolder;
+}
+
+.logo {
+    width: 100%;
+}
+
+.primary {
+    position: relative;
+    height: 90px;
+}
+
+
+.container::before {
+    content: " ";
+    background-image: url(https://i.ibb.co/CzbygSZ/D-moviesand-tv-shows.png);
+    background-repeat: no-repeat;
+    height: 121px;
+    width: 113px;
+    position: absolute;
+    top: -18px;
+    background-size: 124px;
+    cursor: pointer;
+    animation-name: logo0;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in-out;
+
+
+}
+
+@keyframes logo0 {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 13px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+
+.title {
+    flex-direction: column-reverse;
+}
+
+.mainbar {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 34px;
+    margin-left: 89px;
+}
+
+.imdb {
+    color: black;
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.imdb:hover {
+    color: rgb(74, 136, 230);
+
+}
+
+.navmovies {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: black;
+    cursor: pointer;
+}
+
+.navmovies:hover {
+    color: rgb(74, 136, 230);
+}
+
+
+.empty {
+
+    height: 10px;
+}
+
+.notification {
+
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    margin: 27px 0px;
+    width: 1225px;
+    position: relative;
+    left: 73px;
+    border-radius: 6px;
+    align-items: center;
+    font-size: 21px;
+    font-family: revert;
+    font-weight: 600;
+    color: dimgray;
+    background-color: white;
+    box-shadow: 1px 3px 11px;
+}
+
+a.Telegram {
+    color: rgb(11, 174, 250);
+    font-size: 21px;
+    font-family: revert;
+    font-weight: 600;
+}
+
+.container2 {
+    background-color: #aebbc124;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 34px;
+    padding: 32px;
+}
+
+.item {
+    height: 290px;
+    width: 100%;
+    box-shadow: 0px 0px 8px;
+    transition: 4s;
+    transition-timing-function: linear;
+    position: relative;
+
+
+}
+
+.item:hover {
+    transform: scale(0.94);
+}
+
+.innerbox {
+    height: 80%;
+    width: 80%;
+    padding: 28px;
+
+}
+
+.category {
+    height: fit-content;
+    margin-left: -8px;
+    margin-bottom: 3px;
+}
+
+.Hollywood {
+    background-color: rgb(0, 153, 255);
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+    margin: 7px;
+    width: fit-content;
+    height: fit-content;
+    padding: 7px;
+    border-radius: 13px;
+
+}
+
+.movies {
+    background-color: rgb(0, 153, 255);
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+    margin: -5px;
+    width: fit-content;
+    height: fit-content;
+    padding: 7px;
+    border-radius: 13px;
+}
+
+.Hollywood:hover {
+    background-color: white;
+    color: black;
+}
+
+.movies:hover {
+    background-color: white;
+    color: black;
+}
+
+.movieslink {
+    position: absolute;
+    top: 109px;
+    left: 15px;
+    height: fit-content;
+    width: 269px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 21px;
+    background-color: #00000047;
+
+}
+
+#item1::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/e/ed/Aquaman_%28film%29_poster.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#item2::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/9/9b/Eternals_%28film%29_poster.jpeg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#item3::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Black_Widow_%282021_film%29_poster.jpg/220px-Black_Widow_%282021_film%29_poster.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#item4::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg?20180316132919);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#item5::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/a/a7/Venom_Let_There_Be_Carnage_poster.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#item6::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Shang-Chi_and_the_Legend_of_the_Ten_Rings_poster.jpeg/220px-Shang-Chi_and_the_Legend_of_the_Ten_Rings_poster.jpeg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#item7::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/0/0c/American_Psycho.png);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#item8::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Black_hawk_down_ver1.jpg/220px-Black_hawk_down_ver1.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#item9::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Dune_%282021_film%29.jpg/220px-Dune_%282021_film%29.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#item10::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/f/fe/House.of.Gucci.film.jpeg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#item11::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/f/fe/No_Time_to_Die_poster.jpg/220px-No_Time_to_Die_poster.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#item12::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Red_Notice_-_film_promotional_image.jpg/220px-Red_Notice_-_film_promotional_image.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#item13::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/The_Kissing_Booth.png/220px-The_Kissing_Booth.png);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#item14::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/The_Kissing_Booth_2_poster.jpg/220px-The_Kissing_Booth_2_poster.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#item15::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/The_Kissing_Booth_3.jpg/220px-The_Kissing_Booth_3.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#item16::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/The_Contractor_%282022_film%29.jpg/220px-The_Contractor_%282022_film%29.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
