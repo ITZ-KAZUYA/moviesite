@@ -397,3 +397,12 @@ a.Telegram {
     width: 100%;
     z-index: -1;
 }
+#item17::before {
+    content: " ";
+    background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3xPQb090vQTkHw7y6BJ1hYGuzU2-t8kqfrPR91hdTXpzOCtrv);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
