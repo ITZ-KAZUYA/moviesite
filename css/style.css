@@ -40,20 +40,15 @@ a.Download {
     width: 100%;
 }
 
-.primary {
-    position: relative;
-    height: 90px;
-}
-
 
 .container::before {
     content: " ";
     background-image: url(https://i.ibb.co/CzbygSZ/D-moviesand-tv-shows.png);
     background-repeat: no-repeat;
-    height: 121px;
+    height: 114px;
     width: 113px;
     position: absolute;
-    top: -18px;
+    top: 35px;
     background-size: 124px;
     cursor: pointer;
     animation-name: logo0;
@@ -127,12 +122,8 @@ a.Download {
 
     display: flex;
     justify-content: center;
-    height: 32px;
-    margin: 27px 0px;
-    width: 1225px;
-    position: relative;
-    left: 73px;
-    border-radius: 6px;
+    margin: 14px 58px;
+    border-radius: 12px;
     align-items: center;
     font-size: 21px;
     font-family: revert;
@@ -140,6 +131,7 @@ a.Download {
     color: dimgray;
     background-color: white;
     box-shadow: 1px 3px 11px;
+    padding: 5px;
 }
 
 a.Telegram {
@@ -238,6 +230,31 @@ a.Telegram {
     background-color: #00000047;
 
 }
+
+@media (max-width:800px){
+    .mainbar{
+        display: block;
+        margin-left: 140px;
+        margin-right: 27px;
+        width: fit-content;    
+    }
+    .topnav{
+        display: none;
+    }
+
+    .childbar{
+    background: #e9e9e1;
+    width: fit-content;
+    justify-content: center;
+    border-radius: 26px;
+    padding: 3px 8px 3px 11px;
+    margin-top: 4px;
+    margin-right: 3px;
+    }
+
+   
+}
+
 
 #item1::before {
     content: " ";
