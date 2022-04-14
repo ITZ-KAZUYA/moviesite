@@ -423,3 +423,12 @@ a.Telegram {
     width: 100%;
     z-index: -1;
 }
+#item18::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/d/d0/K.G.F_Chapter_2.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
