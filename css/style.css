@@ -432,3 +432,13 @@ a.Telegram {
     width: 100%;
     z-index: -1;
 }
+
+#item19::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Bachchhan_Paandey_poster.jpg/220px-Bachchhan_Paandey_poster.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
