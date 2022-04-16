@@ -21,13 +21,13 @@
 
 }
 
-a {
+ a {
     text-decoration: none;
     color: white;
     font-family: Verdana, sans-serif;
 }
 
-a:hover {
+.navbar a:hover {
     color: aliceblue;
 }
 
@@ -142,7 +142,9 @@ a.Telegram {
 }
 
 .container2 {
-    background-color: #aebbc124;
+    background-color: #dde1e7;
+    position: sticky;
+
 }
 
 .container3 {
@@ -231,28 +233,93 @@ a.Telegram {
 
 }
 
-@media (max-width:800px){
-    .mainbar{
+@media (max-width:800px) {
+    .mainbar {
         display: block;
         margin-left: 140px;
         margin-right: 27px;
-        width: fit-content;    
+        width: fit-content;
     }
-    .topnav{
+
+    .topnav {
         display: none;
     }
 
-    .childbar{
-    background: #e9e9e1;
-    width: fit-content;
-    justify-content: center;
-    border-radius: 26px;
-    padding: 3px 8px 3px 11px;
-    margin-top: 4px;
-    margin-right: 3px;
+    .childbar {
+        background: #e9e9e1;
+        width: fit-content;
+        justify-content: center;
+        border-radius: 26px;
+        padding: 3px 8px 3px 11px;
+        margin-top: 4px;
+        margin-right: 3px;
     }
 
-   
+
+}
+
+.container-page {
+
+    background-color: #dde1e7;
+    height: 100%;
+    padding-top: 16px;
+    padding-bottom: 35px;
+
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    width: fit-content;
+    height: 80px;
+    border: 1px solid #dde1e7;
+    margin: auto;
+    place-items: center;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+
+}
+
+.pagination li {
+
+    padding: 22px;
+    margin-left: 14px;
+    margin-right: 14px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94 104 121 / 29%);
+    border-radius: 3px;
+    line-height: 5px;
+}
+
+.page {
+    color: #424242;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pagination li:hover {
+    box-shadow: inset -3px -3px 7px #ffffff73,
+        inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+@media (max-width:700px) {
+
+    .pagination {
+    display: flex;
+    list-style: none;
+    width: fit-content;
+    height: 100%;
+    border: 1px solid #dde1e7;
+    margin: auto;
+    place-items: center;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+
+}
+.pagination li {
+    padding: 9px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94 104 121 / 29%);
+    border-radius: 3px;
+    line-height: 16px;
+}
 }
 
 
@@ -414,6 +481,7 @@ a.Telegram {
     width: 100%;
     z-index: -1;
 }
+
 #item17::before {
     content: " ";
     background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3xPQb090vQTkHw7y6BJ1hYGuzU2-t8kqfrPR91hdTXpzOCtrv);
@@ -423,6 +491,7 @@ a.Telegram {
     width: 100%;
     z-index: -1;
 }
+
 #item18::before {
     content: " ";
     background-image: url(https://upload.wikimedia.org/wikipedia/en/d/d0/K.G.F_Chapter_2.jpg);
@@ -442,3 +511,9 @@ a.Telegram {
     width: 100%;
     z-index: -1;
 }
+
+
+
+
+
+
