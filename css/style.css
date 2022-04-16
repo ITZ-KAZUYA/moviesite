@@ -21,7 +21,7 @@
 
 }
 
- a {
+a {
     text-decoration: none;
     color: white;
     font-family: Verdana, sans-serif;
@@ -302,24 +302,25 @@ a.Telegram {
 @media (max-width:700px) {
 
     .pagination {
-    display: flex;
-    list-style: none;
-    width: fit-content;
-    height: 100%;
-    border: 1px solid #dde1e7;
-    margin: auto;
-    place-items: center;
-    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+        display: flex;
+        list-style: none;
+        width: fit-content;
+        height: 100%;
+        border: 1px solid #dde1e7;
+        margin: auto;
+        place-items: center;
+        box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
 
-}
-.pagination li {
-    padding: 9px;
-    margin-left: 5px;
-    margin-right: 5px;
-    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94 104 121 / 29%);
-    border-radius: 3px;
-    line-height: 16px;
-}
+    }
+
+    .pagination li {
+        padding: 9px;
+        margin-left: 5px;
+        margin-right: 5px;
+        box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94 104 121 / 29%);
+        border-radius: 3px;
+        line-height: 16px;
+    }
 }
 
 
@@ -517,3 +518,88 @@ a.Telegram {
 
 
 
+
+
+
+
+
+
+
+
+
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+.social-links {
+    display: flex;
+    background-color: rgb(85 87 94);
+    justify-content: center;
+    height: 275px;
+    margin: 0px;
+    align-items: center;
+}
+
+.social-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    margin: 15px;
+    transition: 1s;
+}
+
+.social-btn span {
+    width: 0px;
+    overflow: hidden;
+    transition: 1s;
+    text-align: center;
+}
+
+.social-btn:hover {
+    width: 158px;
+    border-radius: 8px;
+}
+
+.social-btn:hover span {
+    padding: 2px;
+    width: max-content;
+}
+
+
+
+#facebook svg {
+    fill: #0e76a8;
+}
+
+#github {
+    fill: #333;
+}
+
+.social-btn a {
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+.footer {
+    width: 100%;
+}
+
+footer::before {
+    content: "";
+    background-image: url(https://i.ibb.co/jf94VMJ/D-moviesand-tv-shows-1.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 95%;
+    width: 20%;
+}
