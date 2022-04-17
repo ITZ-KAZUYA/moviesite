@@ -320,7 +320,9 @@ a.Telegram {
         box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94 104 121 / 29%);
         border-radius: 3px;
         line-height: 16px;
+
     }
+
 }
 
 
@@ -513,6 +515,17 @@ a.Telegram {
     z-index: -1;
 }
 
+#item20::before {
+    content: " ";
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/e/e8/The_Last_Duel_poster.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+
 
 
 
@@ -539,9 +552,10 @@ a.Telegram {
     display: flex;
     background-color: rgb(85 87 94);
     justify-content: center;
-    height: 275px;
+    height: fit-content;
     margin: 0px;
     align-items: center;
+    height: 250px;
 }
 
 .social-btn {
@@ -575,7 +589,6 @@ a.Telegram {
 }
 
 
-
 #facebook svg {
     fill: #0e76a8;
 }
@@ -592,6 +605,7 @@ a.Telegram {
 
 .footer {
     width: 100%;
+
 }
 
 footer::before {
@@ -600,6 +614,30 @@ footer::before {
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 95%;
+    height: 44%;
     width: 20%;
+}
+
+
+.copyright {
+
+    display: flex;
+    justify-content: center;
+    background-color: rgb(85 87 94);
+    background-color: black;
+    opacity: 0.7;
+    color: aliceblue;
+    height: 37px;
+    align-items: center;
+    font-family: cursive;
+}
+
+.selfWebsite {
+    color: #b4dcff;
+    font-family: cursive;
+}
+
+.selfWebsite:hover {
+
+    font-size: 18px;
 }
