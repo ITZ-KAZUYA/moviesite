@@ -608,7 +608,7 @@ a.Telegram {
 
 }
 
-footer::before {
+/* footer::before {
     content: "";
     background-image: url(https://i.ibb.co/jf94VMJ/D-moviesand-tv-shows-1.png);
     position: absolute;
@@ -616,7 +616,7 @@ footer::before {
     background-repeat: no-repeat;
     height: 44%;
     width: 20%;
-}
+} */
 
 
 .copyright {
