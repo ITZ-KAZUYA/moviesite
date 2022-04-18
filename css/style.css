@@ -627,8 +627,11 @@ footer::before {
     background-color: black;
     opacity: 0.7;
     color: aliceblue;
+    height: fit-content;
     align-items: center;
     font-family: cursive;
+    padding-bottom: 11px;
+    padding-top: 11px;
 }
 
 .selfWebsite {
@@ -642,5 +645,5 @@ footer::before {
 }
 
 p#copyrightbox {
-    height: 100%;
+    height: fit-content;
 }
