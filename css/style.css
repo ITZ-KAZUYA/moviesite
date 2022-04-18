@@ -552,7 +552,6 @@ a.Telegram {
     display: flex;
     background-color: rgb(85 87 94);
     justify-content: center;
-    height: fit-content;
     margin: 0px;
     align-items: center;
     height: 250px;
@@ -629,6 +628,8 @@ a.Telegram {
         height: 30%;
         width: 20%;
     }
+
+
 }
 
 .copyright {
@@ -658,4 +659,33 @@ a.Telegram {
 
 p#copyrightbox {
     height: fit-content;
+}
+
+.line {
+    border: 2px solid white;
+    width: 50%;
+}
+
+hr {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    margin-top: 113px;
+    background-color: #bdbdbd;
+    border: none;
+    height: 2px;
+}
+
+@media screen and (max-width:700px) {
+    hr {
+        width: 74%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 2px;
+        position: absolute;
+        margin-top: 113px;
+        background-color: #bdbdbd;
+        border: none;
+    }
 }
