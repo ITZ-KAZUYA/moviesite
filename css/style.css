@@ -1,691 +1,658 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .topnav {
-
-    padding: 12px 0px;
-    background-color: #262626;
-
+  padding: 12px 0px;
+  background-color: #262626;
 }
 
 .navbar {
-    Display: flex;
-    justify-content: space-evenly;
-    margin: 0px 376px;
-    position: relative;
-    left: -315px;
-    padding: 0px 13px;
-    font-size: small;
-
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 376px;
+  position: relative;
+  left: -315px;
+  padding: 0px 13px;
+  font-size: small;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    font-family: Verdana, sans-serif;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Verdana, sans-serif;
 }
 
 .navbar a:hover {
-    color: aliceblue;
+  color: rgb(154, 157, 160);
 }
 
 a.Download {
-    color: red;
-    font-weight: bolder;
+  color: red;
+  font-weight: bolder;
 }
 
 .logo {
-    width: 100%;
+  width: 100%;
 }
 
-
 .container::before {
-    content: " ";
-    background-image: url(https://i.ibb.co/CzbygSZ/D-moviesand-tv-shows.png);
-    background-repeat: no-repeat;
-    height: 114px;
-    width: 113px;
-    position: absolute;
-    top: 35px;
-    background-size: 124px;
-    cursor: pointer;
-    animation-name: logo0;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    transition-timing-function: ease-in-out;
-
-
+  content: " ";
+  background-image: url(https://i.ibb.co/CzbygSZ/D-moviesand-tv-shows.png);
+  background-repeat: no-repeat;
+  height: 114px;
+  width: 113px;
+  position: absolute;
+  top: 35px;
+  background-size: 124px;
+  cursor: pointer;
+  animation-name: logo0;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-in-out;
 }
 
 @keyframes logo0 {
-    0% {
-        transform: translate(0, 0px);
-    }
+  0% {
+    transform: translate(0, 0px);
+  }
 
-    50% {
-        transform: translate(0, 13px);
-    }
+  50% {
+    transform: translate(0, 13px);
+  }
 
-    100% {
-        transform: translate(0, -0px);
-    }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
-
 .title {
-    flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 .mainbar {
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    font-size: 18px;
-    font-family: sans-serif;
-    font-weight: 600;
-    padding: 34px;
-    margin-left: 89px;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 600;
+  padding: 34px;
+  margin-left: 89px;
 }
 
 .imdb {
-    color: black;
-    font-size: 18px;
-    font-family: sans-serif;
-    cursor: pointer;
+  color: black;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
 }
 
 .imdb:hover {
-    color: rgb(74, 136, 230);
-
+  color: rgb(74, 136, 230);
 }
 
 .navmovies {
-    font-size: 18px;
-    font-family: sans-serif;
-    color: black;
-    cursor: pointer;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: black;
+  cursor: pointer;
 }
 
 .navmovies:hover {
-    color: rgb(74, 136, 230);
+  color: rgb(74, 136, 230);
 }
 
-
 .empty {
-
-    height: 10px;
+  height: 10px;
 }
 
 .notification {
-
-    display: flex;
-    justify-content: center;
-    margin: 14px 58px;
-    border-radius: 12px;
-    align-items: center;
-    font-size: 21px;
-    font-family: revert;
-    font-weight: 600;
-    color: dimgray;
-    background-color: white;
-    box-shadow: 1px 3px 11px;
-    padding: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 14px 58px;
+  border-radius: 12px;
+  align-items: center;
+  font-size: 21px;
+  font-family: revert;
+  font-weight: 600;
+  color: dimgray;
+  background-color: white;
+  box-shadow: 1px 3px 11px;
+  padding: 5px;
 }
 
 a.Telegram {
-    color: rgb(11, 174, 250);
-    font-size: 21px;
-    font-family: revert;
-    font-weight: 600;
+  color: rgb(11, 174, 250);
+  font-size: 21px;
+  font-family: revert;
+  font-weight: 600;
 }
 
 .container2 {
-    background-color: #dde1e7;
-    position: sticky;
-
+  background-color: #dde1e7;
+  position: sticky;
 }
 
 .container3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    justify-content: center;
-    gap: 34px;
-    padding: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  gap: 34px;
+  padding: 32px;
 }
 
 .item {
-    height: 290px;
-    width: 100%;
-    box-shadow: 0px 0px 8px;
-    transition: 4s;
-    transition-timing-function: linear;
-    position: relative;
-
-
+  height: 290px;
+  width: 100%;
+  box-shadow: 0px 0px 8px;
+  transition: 4s;
+  transition-timing-function: linear;
+  position: relative;
 }
 
 .item:hover {
-    transform: scale(0.94);
+  transform: scale(0.94);
 }
 
 .innerbox {
-    height: 80%;
-    width: 80%;
-    padding: 28px;
-
+  height: 80%;
+  width: 80%;
+  padding: 28px;
 }
 
 .category {
-    height: fit-content;
-    margin-left: -8px;
-    margin-bottom: 3px;
+  height: fit-content;
+  margin-left: -8px;
+  margin-bottom: 3px;
 }
 
 .Hollywood {
-    background-color: rgb(0, 153, 255);
-    color: white;
-    font-family: Verdana, sans-serif;
-    font-size: 11px;
-    margin: 7px;
-    width: fit-content;
-    height: fit-content;
-    padding: 7px;
-    border-radius: 13px;
-
+  background-color: rgb(0, 153, 255);
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-size: 11px;
+  margin: 7px;
+  width: fit-content;
+  height: fit-content;
+  padding: 7px;
+  border-radius: 13px;
 }
 
 .movies {
-    background-color: rgb(0, 153, 255);
-    color: white;
-    font-family: Verdana, sans-serif;
-    font-size: 11px;
-    margin: -5px;
-    width: fit-content;
-    height: fit-content;
-    padding: 7px;
-    border-radius: 13px;
+  background-color: rgb(0, 153, 255);
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-size: 11px;
+  margin: -5px;
+  width: fit-content;
+  height: fit-content;
+  padding: 7px;
+  border-radius: 13px;
 }
 
 .Hollywood:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .movies:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .movieslink {
-    position: absolute;
-    top: 109px;
-    left: 15px;
-    height: fit-content;
-    width: 269px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    color: white;
-    font-size: 21px;
-    background-color: #00000047;
-
+  position: absolute;
+  top: 109px;
+  left: 15px;
+  height: fit-content;
+  width: 269px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 21px;
+  background-color: #00000047;
 }
 
-@media (max-width:800px) {
-    .mainbar {
-        display: block;
-        margin-left: 140px;
-        margin-right: 27px;
-        width: fit-content;
-    }
+@media (max-width: 800px) {
+  .mainbar {
+    display: block;
+    margin-left: 140px;
+    margin-right: 27px;
+    width: fit-content;
+  }
 
-    .topnav {
-        display: none;
-    }
+  .topnav {
+    display: none;
+  }
 
-    .childbar {
-        background: #e9e9e1;
-        width: fit-content;
-        justify-content: center;
-        border-radius: 26px;
-        padding: 3px 8px 3px 11px;
-        margin-top: 4px;
-        margin-right: 3px;
-    }
-
-
+  .childbar {
+    background: #e9e9e1;
+    width: fit-content;
+    justify-content: center;
+    border-radius: 26px;
+    padding: 3px 8px 3px 11px;
+    margin-top: 4px;
+    margin-right: 3px;
+  }
 }
 
 .container-page {
-
-    background-color: #dde1e7;
-    height: 100%;
-    padding-top: 16px;
-    padding-bottom: 35px;
-
+  background-color: #dde1e7;
+  height: 100%;
+  padding-top: 16px;
+  padding-bottom: 35px;
 }
 
 .pagination {
+  display: flex;
+  list-style: none;
+  width: fit-content;
+  height: 80px;
+  border: 1px solid #dde1e7;
+  margin: auto;
+  place-items: center;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.pagination li {
+  padding: 22px;
+  margin-left: 14px;
+  margin-right: 14px;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94 104 121 / 29%);
+  border-radius: 3px;
+  line-height: 5px;
+}
+
+.page {
+  color: #424242;
+  font-family: "Poppins", sans-serif;
+}
+
+.pagination li:hover {
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+@media (max-width: 700px) {
+  .pagination {
     display: flex;
     list-style: none;
     width: fit-content;
-    height: 80px;
+    height: 100%;
     border: 1px solid #dde1e7;
     margin: auto;
     place-items: center;
     box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  }
 
-}
-
-.pagination li {
-
-    padding: 22px;
-    margin-left: 14px;
-    margin-right: 14px;
+  .pagination li {
+    padding: 9px;
+    margin-left: 5px;
+    margin-right: 5px;
     box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94 104 121 / 29%);
     border-radius: 3px;
-    line-height: 5px;
+    line-height: 16px;
+  }
 }
-
-.page {
-    color: #424242;
-    font-family: 'Poppins', sans-serif;
-}
-
-.pagination li:hover {
-    box-shadow: inset -3px -3px 7px #ffffff73,
-        inset 3px 3px 5px rgba(94, 104, 121, 0.288);
-}
-
-@media (max-width:700px) {
-
-    .pagination {
-        display: flex;
-        list-style: none;
-        width: fit-content;
-        height: 100%;
-        border: 1px solid #dde1e7;
-        margin: auto;
-        place-items: center;
-        box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
-
-    }
-
-    .pagination li {
-        padding: 9px;
-        margin-left: 5px;
-        margin-right: 5px;
-        box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94 104 121 / 29%);
-        border-radius: 3px;
-        line-height: 16px;
-
-    }
-
-}
-
 
 #item1::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/e/ed/Aquaman_%28film%29_poster.jpg);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/e/ed/Aquaman_%28film%29_poster.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item2::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/9/9b/Eternals_%28film%29_poster.jpeg);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/9/9b/Eternals_%28film%29_poster.jpeg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item3::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Black_Widow_%282021_film%29_poster.jpg/220px-Black_Widow_%282021_film%29_poster.jpg);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Black_Widow_%282021_film%29_poster.jpg/220px-Black_Widow_%282021_film%29_poster.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item4::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg?20180316132919);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg?20180316132919);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item5::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/a/a7/Venom_Let_There_Be_Carnage_poster.jpg);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/a/a7/Venom_Let_There_Be_Carnage_poster.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item6::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Shang-Chi_and_the_Legend_of_the_Ten_Rings_poster.jpeg/220px-Shang-Chi_and_the_Legend_of_the_Ten_Rings_poster.jpeg);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Shang-Chi_and_the_Legend_of_the_Ten_Rings_poster.jpeg/220px-Shang-Chi_and_the_Legend_of_the_Ten_Rings_poster.jpeg);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item7::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/0/0c/American_Psycho.png);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/0/0c/American_Psycho.png);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item8::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Black_hawk_down_ver1.jpg/220px-Black_hawk_down_ver1.jpg);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Black_hawk_down_ver1.jpg/220px-Black_hawk_down_ver1.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item9::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Dune_%282021_film%29.jpg/220px-Dune_%282021_film%29.jpg);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Dune_%282021_film%29.jpg/220px-Dune_%282021_film%29.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item10::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/f/fe/House.of.Gucci.film.jpeg);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/f/fe/House.of.Gucci.film.jpeg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item11::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/f/fe/No_Time_to_Die_poster.jpg/220px-No_Time_to_Die_poster.jpg);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/f/fe/No_Time_to_Die_poster.jpg/220px-No_Time_to_Die_poster.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item12::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Red_Notice_-_film_promotional_image.jpg/220px-Red_Notice_-_film_promotional_image.jpg);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Red_Notice_-_film_promotional_image.jpg/220px-Red_Notice_-_film_promotional_image.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item13::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/The_Kissing_Booth.png/220px-The_Kissing_Booth.png);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/The_Kissing_Booth.png/220px-The_Kissing_Booth.png);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item14::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/The_Kissing_Booth_2_poster.jpg/220px-The_Kissing_Booth_2_poster.jpg);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/The_Kissing_Booth_2_poster.jpg/220px-The_Kissing_Booth_2_poster.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item15::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/The_Kissing_Booth_3.jpg/220px-The_Kissing_Booth_3.jpg);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/The_Kissing_Booth_3.jpg/220px-The_Kissing_Booth_3.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item16::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/The_Contractor_%282022_film%29.jpg/220px-The_Contractor_%282022_film%29.jpg);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/The_Contractor_%282022_film%29.jpg/220px-The_Contractor_%282022_film%29.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item17::before {
-    content: " ";
-    background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3xPQb090vQTkHw7y6BJ1hYGuzU2-t8kqfrPR91hdTXpzOCtrv);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3xPQb090vQTkHw7y6BJ1hYGuzU2-t8kqfrPR91hdTXpzOCtrv);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item18::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/d/d0/K.G.F_Chapter_2.jpg);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/d/d0/K.G.F_Chapter_2.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item19::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Bachchhan_Paandey_poster.jpg/220px-Bachchhan_Paandey_poster.jpg);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Bachchhan_Paandey_poster.jpg/220px-Bachchhan_Paandey_poster.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #item20::before {
-    content: " ";
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/e/e8/The_Last_Duel_poster.jpg);
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/e/e8/The_Last_Duel_poster.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .social-links {
-    display: flex;
-    background-color: rgb(85 87 94);
-    justify-content: center;
-    margin: 0px;
-    align-items: center;
-    height: 250px;
+  display: flex;
+  background-color: rgb(85 87 94);
+  justify-content: center;
+  margin: 0px;
+  align-items: center;
+  height: 250px;
 }
 
 .social-btn {
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
-    font-family: 'Titillium Web', sans-serif;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    background: white;
-    margin: 15px;
-    transition: 1s;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: "Titillium Web", sans-serif;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  margin: 15px;
+  transition: 1s;
 }
 
 .social-btn span {
-    width: 0px;
-    overflow: hidden;
-    transition: 1s;
-    text-align: center;
+  width: 0px;
+  overflow: hidden;
+  transition: 1s;
+  text-align: center;
 }
 
 .social-btn:hover {
-    width: 158px;
-    border-radius: 8px;
+  width: 158px;
+  border-radius: 8px;
 }
 
 .social-btn:hover span {
-    padding: 2px;
-    width: max-content;
+  padding: 2px;
+  width: max-content;
 }
 
-
 #facebook svg {
-    fill: #0e76a8;
+  fill: #0e76a8;
 }
 
 #github {
-    fill: #333;
+  fill: #333;
 }
 
 .social-btn a {
-    color: black;
-    font-family: 'Titillium Web', sans-serif;
+  color: black;
+  font-family: "Titillium Web", sans-serif;
 }
 
-
 .footer {
-    width: 100%;
-
+  width: 100%;
 }
 
 .footer::before {
+  content: "";
+  background-image: url(https://i.ibb.co/jf94VMJ/D-moviesand-tv-shows-1.png);
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 44%;
+  width: 20%;
+}
+
+@media screen and (max-width: 700px) {
+  .footer::before {
     content: "";
     background-image: url(https://i.ibb.co/jf94VMJ/D-moviesand-tv-shows-1.png);
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 44%;
+    height: 30%;
     width: 20%;
-}
-
-@media screen and (max-width:700px) {
-
-    .footer::before {
-        content: "";
-        background-image: url(https://i.ibb.co/jf94VMJ/D-moviesand-tv-shows-1.png);
-        position: absolute;
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 30%;
-        width: 20%;
-    }
-
-
+  }
 }
 
 .copyright {
-
-    display: flex;
-    justify-content: center;
-    background-color: rgb(85 87 94);
-    background-color: black;
-    opacity: 0.7;
-    color: aliceblue;
-    height: fit-content;
-    align-items: center;
-    font-family: cursive;
-    padding-bottom: 11px;
-    padding-top: 11px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(85 87 94);
+  background-color: black;
+  opacity: 0.7;
+  color: aliceblue;
+  height: fit-content;
+  align-items: center;
+  font-family: cursive;
+  padding-bottom: 11px;
+  padding-top: 11px;
 }
 
 .selfWebsite {
-    color: #b4dcff;
-    font-family: cursive;
+  color: #b4dcff;
+  font-family: cursive;
 }
 
 .selfWebsite:hover {
-
-    font-size: 18px;
+  font-size: 18px;
 }
 
 p#copyrightbox {
-    height: fit-content;
+  height: fit-content;
 }
 
 .line {
-    border: 2px solid white;
-    width: 50%;
+  border: 2px solid white;
+  width: 50%;
 }
 
 hr {
-    width: 35%;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  margin-top: 113px;
+  background-color: #bdbdbd;
+  border: none;
+  height: 2px;
+}
+
+@media screen and (max-width: 700px) {
+  hr {
+    width: 74%;
     margin-left: auto;
     margin-right: auto;
+    height: 2px;
     position: absolute;
     margin-top: 113px;
     background-color: #bdbdbd;
     border: none;
-    height: 2px;
+  }
 }
 
-@media screen and (max-width:700px) {
-    hr {
-        width: 74%;
-        margin-left: auto;
-        margin-right: auto;
-        height: 2px;
-        position: absolute;
-        margin-top: 113px;
-        background-color: #bdbdbd;
-        border: none;
-    }
+ul li {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.dropdown {
+  display: none;
+}
+ul li:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+  color: #262626;
+}
+ul li a {
+  color: #0e76a8;
+}
+ul li a:hover {
+  color: black;
 }
