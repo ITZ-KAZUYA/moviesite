@@ -136,15 +136,15 @@ a.Download {
 
 @keyframes logo0 {
   0% {
-    transform: translate(0, 0px);
+    transform: translate(0, 30px);
   }
 
   50% {
-    transform: translate(0, 13px);
+    transform: translate(0, 36px);
   }
 
   100% {
-    transform: translate(0, -0px);
+    transform: translate(0, 30px);
   }
 }
 
@@ -176,7 +176,6 @@ a.Telegram {
 
 .container2 {
   background-color: #dde1e7;
-  position: sticky;
 }
 
 .container3 {
@@ -349,7 +348,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item2::before {
@@ -359,7 +358,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item3::before {
@@ -369,7 +368,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item4::before {
@@ -379,7 +378,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item5::before {
@@ -389,7 +388,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item6::before {
@@ -398,7 +397,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item7::before {
@@ -408,7 +407,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item8::before {
@@ -418,7 +417,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item9::before {
@@ -428,7 +427,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item10::before {
@@ -438,7 +437,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item11::before {
@@ -448,7 +447,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item12::before {
@@ -458,7 +457,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item13::before {
@@ -468,7 +467,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item14::before {
@@ -478,7 +477,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item15::before {
@@ -488,7 +487,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item16::before {
@@ -498,7 +497,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item17::before {
@@ -508,7 +507,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item18::before {
@@ -518,7 +517,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item19::before {
@@ -528,7 +527,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #item20::before {
@@ -538,7 +537,7 @@ a.Telegram {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 .flex-center {
