@@ -1500,12 +1500,12 @@ hr {
     content: ' ';
     background-image: url(https://i.ibb.co/CzbygSZ/D-moviesand-tv-shows.png);
     background-repeat: no-repeat;
-    height: 100%;
+    height: 50%;
     left: 24px;
     top: -55px;
-    width: 100%;
+    width: 69%;
     position: absolute;
-    background-size: 296px;
+    background-size: 328px;
     cursor: pointer;
     animation-name: logo0;
     animation-duration: 5s;
@@ -1513,6 +1513,7 @@ hr {
     transition-timing-function: ease-in-out;
     opacity: 0.5;
   }
+
 
   .hamburgurnavbar {
     width: 75%;
