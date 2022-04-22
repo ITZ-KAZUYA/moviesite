@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
 }
@@ -33,6 +34,7 @@ a {
   color: rgb(255, 255, 255);
   padding: 7px;
 }
+
 .navbar a:hover {
   color: rgb(154, 157, 160);
 }
@@ -40,6 +42,7 @@ a {
 ul li a {
   color: #0e76a8;
 }
+
 ul li a .navmovies:hover {
   color: black;
 }
@@ -56,6 +59,7 @@ a.Download {
 .main {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .primary {
@@ -74,6 +78,7 @@ a.Download {
   padding-top: 25px;
   margin-left: 118px;
   margin-right: 100px;
+
 }
 
 .main::before {
@@ -117,6 +122,7 @@ a.Download {
   padding-right: 21px;
   font-size: 15px;
 }
+
 .dropdown ul li a {
   color: black;
 }
@@ -719,6 +725,7 @@ hr {
     transform: scale(1.5, 1.5) translate(-50%, -50%);
   }
 }
+
 @media (min-width: 765px) and (max-width: 995px) {
   .wrapper {
     position: relative;
@@ -749,6 +756,7 @@ hr {
     z-index: 2;
   }
 }
+
 @media (min-width: 0px) and (max-width: 764px) {
   .wrapper {
     position: relative;
@@ -956,107 +964,134 @@ hr {
 }
 
 @keyframes blink-eyes {
+
   0%,
   35% {
     opacity: 1;
     transform: translate(-70%, 0%);
   }
+
   36%,
   39% {
     opacity: 0;
     transform: translate(-70%, 0%);
   }
+
   40% {
     opacity: 1;
     transform: translate(-70%, 0%);
   }
+
   50%,
   65% {
     transform: translate(-140%, 0%);
   }
+
   66% {
     transform: translate(-70%, 0%);
   }
 }
+
 @keyframes expand-body {
+
   0%,
   40% {
     transform: scale(1, 1) translate(60%, -25%);
   }
+
   45%,
   55% {
     transform: scale(1.1, 1.1) translate(60%, -28%);
   }
+
   60% {
     transform: scale(0.89, 0.89) translate(60%, -25%);
   }
+
   65% {
     transform: scale(1, 1) translate(60%, -25%);
   }
+
   70% {
     transform: scale(0.95, 0.95) translate(60%, -25%);
   }
+
   75% {
     transform: scale(1, 1) translate(60%, -25%);
   }
 }
+
 @keyframes uff {
+
   0%,
   40% {
     width: 0px;
     height: 0px;
   }
+
   50%,
   54% {
     width: 15px;
     height: 15px;
     left: 30%;
   }
+
   59% {
     width: 5px;
     height: 5px;
     left: 20%;
   }
+
   62% {
     width: 2px;
     height: 2px;
     left: 20%;
   }
+
   67% {
     width: 0px;
     height: 0px;
     left: 30%;
   }
 }
+
 @keyframes change-background {
+
   0%,
   59%,
   98%,
   100% {
     background: #fff;
   }
+
   61%,
   97% {
     background: #000;
   }
 }
+
 @keyframes move-left {
+
   0%,
   59%,
   100% {
     width: 0px;
     left: 40%;
   }
+
   60% {
     width: 30px;
     left: 30%;
   }
+
   68% {
     width: 0px;
     left: 20%;
   }
 }
+
 @keyframes move-top {
+
   0%,
   64%,
   100% {
@@ -1064,51 +1099,62 @@ hr {
     height: 0px;
     top: 0%;
   }
+
   65% {
     width: 10px;
     height: 10px;
     top: 40%;
     left: 40%;
   }
+
   80% {
     width: 0px;
     height: 0px;
     top: 20%;
   }
 }
+
 @keyframes shake-left {
+
   0%,
   40% {
     left: 20%;
     transform: translate(60%, -15%);
   }
+
   50%,
   54% {
     left: 20%;
     transform: translate(60%, -15%);
   }
+
   59% {
     left: 20%;
     transform: translate(60%, -15%);
   }
+
   62% {
     left: 18%;
     transform: translate(60%, -15%);
   }
+
   65% {
     left: 21%;
     transform: translate(60%, -15%);
   }
+
   67% {
     left: 20%;
     transform: translate(60%, -15%);
   }
+
   75% {
     left: 20%;
     transform: scale(1.15, 0.85) translate(60%, -15%);
     background: #fff;
     border-color: #673c63;
   }
+
   91% {
     left: 20%;
     transform: scale(1.18, 0.82) translate(60%, -10%);
@@ -1116,73 +1162,89 @@ hr {
     border-color: #f44336;
     box-shadow: -2px 0px 0px #f44336 inset;
   }
+
   92% {
     left: 20%;
     transform: scale(0.85, 1.15) translate(60%, -15%);
   }
+
   95% {
     left: 20%;
     transform: scale(1.05, 0.95) translate(60%, -15%);
   }
+
   97% {
     left: 20%;
     transform: scale(1, 1) translate(60%, -15%);
   }
 }
+
 @keyframes stick-animation {
+
   0%,
   40% {
     left: 50%;
     top: 0%;
     transform: translate(-50%, -100%);
   }
+
   50%,
   54% {
     left: 50%;
     top: 0%;
     transform: translate(-50%, -100%);
   }
+
   59% {
     left: 50%;
     top: 0%;
     transform: translate(-50%, -100%);
   }
+
   62% {
     left: 50%;
     top: 0%;
     transform: rotateZ(-15deg) translate(-50%, -100%);
   }
+
   65% {
     left: 50%;
     top: 0%;
     transform: rotateZ(15deg) translate(-50%, -100%);
   }
+
   70% {
     left: 50%;
     top: 0%;
     transform: rotateZ(-5deg) translate(-50%, -100%);
   }
+
   72% {
     left: 50%;
     top: 0%;
     transform: rotateZ(5deg) translate(-50%, -100%);
   }
+
   74%,
   84% {
     left: 50%;
     top: 0%;
     transform: rotateZ(0deg) translate(-50%, -100%);
   }
+
   85% {
     transform: rotateZ(180deg) translate(0%, 120%);
   }
+
   92% {
     left: 50%;
     top: 0%;
     transform: translate(-50%, -100%);
   }
 }
+
 @keyframes expand-light {
+
   10%,
   29%,
   59%,
@@ -1190,11 +1252,13 @@ hr {
     transform: translate(-25%, -50%) scale(0, 0);
     border: 2px solid rgba(255, 255, 255, 0);
   }
+
   90%,
   20%,
   50% {
     transform: translate(-25%, -50%) scale(1, 1);
   }
+
   95%,
   96%,
   26%,
@@ -1204,6 +1268,7 @@ hr {
     transform: translate(-25%, -50%) scale(2, 2);
     border: 2px solid rgba(255, 255, 255, 0.5);
   }
+
   0%,
   28%,
   58%,
@@ -1212,13 +1277,16 @@ hr {
     border: 2px solid rgba(255, 255, 255, 0.2);
   }
 }
+
 @keyframes dance-fire {
+
   59%,
   89% {
     left: 40%;
     width: 0px;
     height: 0px;
   }
+
   90%,
   0%,
   7%,
@@ -1233,6 +1301,7 @@ hr {
     height: 20px;
     background: #ffc107;
   }
+
   94%,
   3%,
   11%,
@@ -1248,7 +1317,9 @@ hr {
     background: #ff9800;
   }
 }
+
 @keyframes changeto-lower {
+
   0%,
   70%,
   90% {
@@ -1260,6 +1331,7 @@ hr {
     border: 0px solid #673c63;
     transform: translate(-90%, 0%);
   }
+
   71%,
   89% {
     background: none;
@@ -1274,7 +1346,9 @@ hr {
     -webkit-transform: rotate(-45deg) translate(-50%, -65%);
   }
 }
+
 @keyframes changeto-greater {
+
   0%,
   70%,
   90% {
@@ -1287,6 +1361,7 @@ hr {
     border: 0px solid #673c63;
     transform: translate(-80%, 0%);
   }
+
   71%,
   89% {
     top: 30%;
@@ -1300,5 +1375,201 @@ hr {
     transform-origin: bottom left;
     transform: rotate(135deg) translate(-80%, 20%);
     -webkit-transform: rotate(135deg) translate(-80%, 20%);
+  }
+}
+
+
+
+
+.hamburger-container {
+  height: 24px;
+  width: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 35px 0 0px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hamburger-container .line {
+  height: 4px;
+  width: 100%;
+  background: #0e2431;
+  border: none;
+  border-radius: 22px;
+  transition: 0.3s;
+  transition-timing-function: linear;
+  cursor: pointer;
+
+
+}
+
+.firstline {
+  transform: rotate(40deg) translate(6px, 8px);
+
+}
+
+.secondline {
+  opacity: 0;
+}
+
+.thirdline {
+  transform: rotate(-39deg) translate(6px, -8px);
+
+}
+
+.hamburgurnavbar ul li a {
+  color: #000;
+}
+
+.hamburgurnavbar {
+
+  width: 30%;
+  min-height: 100vh;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 1;
+  background: rgb(243, 243, 243);
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+.hamburgurnavbar {
+  list-style: none;
+
+}
+
+.childhamburgar {
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30%;
+  margin-left: 34px;
+  margin-right: 34px;
+  background-color: #ffffff;
+  box-shadow: 0 0 9px;
+  border-radius: 10px;
+}
+
+.hamburgurnavbarjava {
+  left: 70%;
+
+}
+
+.childhamburgar li {
+  width: 80%;
+  text-align: center;
+  box-shadow: #ededed 0px 1px 0px;
+  padding-bottom: 13px;
+}
+
+.childhamburgar li a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 19px;
+  font-family: emoji;
+}
+
+.childhamburgar li a:hover {
+  color: black;
+  font-size: 20px;
+  ;
+}
+
+@media screen and (max-width:500px) {
+  .primary {
+    display: none;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 47vh;
+  }
+
+
+  .main::before {
+    content: ' ';
+    background-image: url(https://i.ibb.co/CzbygSZ/D-moviesand-tv-shows.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 24px;
+    top: -55px;
+    width: 100%;
+    position: absolute;
+    background-size: 296px;
+    cursor: pointer;
+    animation-name: logo0;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in-out;
+    opacity: 0.5;
+  }
+
+  .hamburgurnavbar {
+    width: 75%;
+    min-height: 100%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    background: rgb(243, 243, 243);
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .hamburgurnavbarjava {
+    left: 25%;
+
+  }
+
+  .childhamburgar {
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 85%;
+    margin-left: 34px;
+    margin-right: 34px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px;
+    border-radius: 10px;
+  }
+
+  .hamburger-container {
+    height: 24px;
+    width: 51px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 35px 0 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+
+  .hamburger-container .line {
+    height: 4px;
+    width: 100%;
+    background: #0e2431;
+    border: none;
+    border-radius: 22px;
+    transition: 0.3s;
+    transition-timing-function: linear;
+    cursor: pointer;
+
+
   }
 }
