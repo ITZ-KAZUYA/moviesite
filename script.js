@@ -6,6 +6,10 @@ const overLay = document.querySelector(".overlay");
 const hamburger = document.querySelector(".hamburger-container");
 const hiddenhamburgurnavbar = document.querySelector(".hamburgurnavbar");
 const movieContainer = document.querySelector(".container3");
+const movieLink = document.getElementById('movielink');
+const movieTitle = document.getElementById('movietitle');
+const moviePoster = document.getElementById('movieposter');
+const submit = document.getElementById('button');
 
 hamburger.addEventListener("click", function () {
   line01.classList.toggle("firstline");
@@ -44,7 +48,8 @@ const link = [
   'https://drive.google.com/file/d/1S2730Zq2RggpW1Ek3ZSMy4GKFWyUVyJA/view?usp=sharing" target="_blank',
   'https://drive.google.com/file/d/1c-LVv4t-49X3LC4WuQqcrBspRey5HGtA/view?usp=sharing" target="_blank',
   'https://drive.google.com/file/d/1DRwj-0sf7Uu8yW-ATcmLm1QoUIw-D4v2/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1oO6DDUt_Q7UVusVzqUUwqwXLKXvCRBvW/view?usp=sharing" target="_blank'
+  'https://drive.google.com/file/d/1oO6DDUt_Q7UVusVzqUUwqwXLKXvCRBvW/view?usp=sharing" target="_blank',
+  'https://drive.google.com/file/d/1pK_CNwth0J9C_snShHlhxJYJIAI2dYzH/view?usp=sharing" target="_blank',
 
 
 
@@ -72,9 +77,8 @@ const name = [
   'KGF Chapter 2 1080p HQ HDACM Hindi Dubbed x264 AAC',
   'Bachchhan Paandey 2022 1080p WEB-DL AAC x264',
   ' The Last Duel 2021 1080p WEBRip DD5.1 x264',
-  'Beast (2022) - Hindi - 1080p HQ HDRip - x264 - AAC - 2.5GB - HC'
-
-
+  'Beast (2022) - Hindi - 1080p HQ HDRip - x264 - AAC - 2.5GB - HC',
+  'Doctor Strange In The Multiverse of Madness (2022) 720p HDCAM x264',
 
 
 ];
@@ -101,7 +105,8 @@ const bgposter = [
   'https://upload.wikimedia.org/wikipedia/en/d/d0/K.G.F_Chapter_2.jpg',
   'https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Bachchhan_Paandey_poster.jpg/220px-Bachchhan_Paandey_poster.jpg',
   'https://upload.wikimedia.org/wikipedia/en/e/e8/The_Last_Duel_poster.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/3/3d/Beast_2022_Indian_poster.jpg'
+  'https://upload.wikimedia.org/wikipedia/en/3/3d/Beast_2022_Indian_poster.jpg',
+  'https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg/220px-Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg',
 
 
 
@@ -137,3 +142,35 @@ const displayLink = function (link) {
 };
 
 displayLink(link);
+
+
+
+
+
+
+
+
+
+
+
+
+
+let abc = [];
+let bcd = [];
+let efg = [];
+
+submit.addEventListener('click', function () {
+
+  dog();
+});
+
+
+function dog() {
+  const title = movieTitle.value;
+  const Link = movieLink.value;
+  const poster = moviePoster;
+
+  abc.push(title);
+  bcd.push(Link);
+  efg.push(poster);
+}
