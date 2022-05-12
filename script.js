@@ -50,6 +50,7 @@ const link = [
   'https://drive.google.com/file/d/1DRwj-0sf7Uu8yW-ATcmLm1QoUIw-D4v2/view?usp=sharing" target="_blank',
   'https://drive.google.com/file/d/1oO6DDUt_Q7UVusVzqUUwqwXLKXvCRBvW/view?usp=sharing" target="_blank',
   'https://drive.google.com/file/d/1pK_CNwth0J9C_snShHlhxJYJIAI2dYzH/view?usp=sharing" target="_blank',
+  'https://drive.google.com/file/d/1Qo6an11mMQIpfB4YmoXtzjevOSP--IvW/view?usp=sharing " target="_blank',
 
 
 
@@ -79,6 +80,7 @@ const name = [
   ' The Last Duel 2021 1080p WEBRip DD5.1 x264',
   'Beast (2022) - Hindi - 1080p HQ HDRip - x264 - AAC - 2.5GB - HC',
   'Doctor Strange In The Multiverse of Madness (2022) 720p HDCAM x264',
+  'The Northman 2022 1080p AMZN WEB-DL DDP5.1 H.264',
 
 
 ];
@@ -107,6 +109,7 @@ const bgposter = [
   'https://upload.wikimedia.org/wikipedia/en/e/e8/The_Last_Duel_poster.jpg',
   'https://upload.wikimedia.org/wikipedia/en/3/3d/Beast_2022_Indian_poster.jpg',
   'https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg/220px-Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg',
+  'https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/The_Northman.png/220px-The_Northman.png',
 
 
 
