@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 a {
   text-decoration: none;
 }
@@ -60,6 +62,10 @@ a.Download {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  background-color: white;
+  height: 80px;
+
 }
 
 .primary {
@@ -70,15 +76,17 @@ a.Download {
   font-family: sans-serif;
   font-weight: 600;
 
-  height: 100%;
-  width: 77%;
-
+  width: 100%;
   flex-wrap: wrap;
   padding-bottom: 25px;
   padding-top: 25px;
-  margin-left: 118px;
-  margin-right: 100px;
-
+  background: white;
+  position: fixed;
+  z-index: 2;
+  padding: 0px 94px 0px 100px;
+  height: inherit;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0 0 5px;
 }
 
 .main::before {
@@ -87,29 +95,50 @@ a.Download {
   background-repeat: no-repeat;
   height: 109px;
   left: -13px;
-  top: -18px;
+  top: -61px;
   width: 122px;
-  position: absolute;
+  position: fixed;
   background-size: 130px;
   cursor: pointer;
   animation-name: logo0;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   transition-timing-function: ease-in-out;
+  z-index: 3;
 }
 
 .primary li {
   list-style: none;
   padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
 }
 
 .primary li a {
-  color: #000;
+  color: hsl(227, 35%, 25%);
+  font-family: Manrope;
+  letter-spacing: 0.3px;
+  font-weight: 800;
 }
 
-.primary li:hover {
-  background-color: rgba(233, 233, 233, 0.938);
-  border-radius: 3px;
+.primary li:hover .lineline {
+  width: 100%;
+}
+
+.lineline {
+  display: block;
+  border: none;
+  height: 2px;
+  background-color: #232958;
+  width: 0;
+  position: relative;
+  top: 3px;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  border-radius: 20px;
 }
 
 .dropdown {
@@ -282,6 +311,7 @@ a.Telegram {
     margin-left: 140px;
     margin-right: 27px;
     width: fit-content;
+    z-index: 1;
   }
 
   .topnav {
@@ -295,7 +325,9 @@ a.Telegram {
     border-radius: 26px;
     padding: 3px 8px 3px 11px;
     margin-top: 4px;
-    margin-right: 3px;
+    margin-right: -42px;
+    font-size: 11px;
+
   }
 }
 
@@ -1227,6 +1259,9 @@ hr {
   border: none;
   cursor: pointer;
   z-index: 3;
+  position: fixed;
+  right: 10px;
+
 }
 
 .hamburger-container .line {
@@ -1238,6 +1273,7 @@ hr {
   transition: 0.3s;
   transition-timing-function: linear;
   cursor: pointer;
+
 
 
 }
@@ -1311,7 +1347,8 @@ hr {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 19px;
-  font-family: emoji;
+  font-family: Manrope;
+  color: hsl(227, 35%, 25%);
 }
 
 .childhamburgar li a:hover {
@@ -1348,7 +1385,9 @@ hr {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 19px;
-  font-family: emoji;
+
+  font-family: Manrope;
+  color: hsl(227, 35%, 25%);
 }
 
 .childhamburgar2 li a:hover {
@@ -1389,6 +1428,7 @@ hr {
     animation-iteration-count: infinite;
     transition-timing-function: ease-in-out;
     opacity: 0.5;
+    z-index: 1;
   }
 
 
@@ -1437,6 +1477,7 @@ hr {
     border: none;
     cursor: pointer;
     z-index: 3;
+    position: absolute;
   }
 
 
