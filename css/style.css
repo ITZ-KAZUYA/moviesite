@@ -231,82 +231,55 @@ a.Telegram {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 0fr));
   justify-content: center;
-  gap: 38px;
+  gap: 136px 20px;
   padding: 32px;
+
 }
 
 .item {
-  height: 18rem;
   width: 15rem;
-  box-shadow: var(--shadow-box);
-  transition: 4s;
+  height: 21rem;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: 5s;
   transition-timing-function: ease-in-out;
-  position: relative;
+  align-items: center;
+
+
 }
 
 .item:hover {
-  transform: scale(0.88);
+  transform: scale(0.93);
 }
 
-.innerbox {
-
-  padding: 28px;
-  display: flex;
-}
-
-.category {
-  position: absolute;
-  height: fit-content;
-  margin-left: -8px;
-  margin-bottom: 3px;
-  z-index: 1;
-}
-
-.Hollywood {
-  background-color: rgb(0, 153, 255);
-  color: white;
-  font-family: Verdana, sans-serif;
-  font-size: 11px;
-  margin: 7px;
-  width: fit-content;
-  height: fit-content;
-  padding: 7px;
-  border-radius: 13px;
-}
-
-.movies {
-  background-color: rgb(0, 153, 255);
-  color: white;
-  font-family: Verdana, sans-serif;
-  font-size: 11px;
-  margin: -5px;
-  width: fit-content;
-  height: fit-content;
-  padding: 7px;
-  border-radius: 13px;
-}
-
-.Hollywood:hover {
-  background-color: white;
-  color: black;
-}
-
-.movies:hover {
-  background-color: white;
-  color: black;
-}
 
 .movieslink {
-  height: fit-content;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  color: white;
-  font-size: 21px;
-  background-color: #00000080;
-  z-index: 1;
-  margin-top: 23%;
+  color: #2F2F33;
+  font-size: 17px;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 0px;
 }
+
+.date_rating {
+  display: flex;
+  font-family: "DM Sans", sans-serif;
+  align-items: center;
+  gap: 9px;
+  color: #000000a1;
+  font-size: 13px;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #424242;
+  border-radius: 50%;
+}
+
+
+
 
 @media (max-width: 800px) {
   .mainbar {
@@ -337,7 +310,7 @@ a.Telegram {
 .container-page {
   background-color: #dde1e7;
   height: 100%;
-  padding-top: 16px;
+  padding-top: 100px;
   padding-bottom: 35px;
 }
 
@@ -800,10 +773,30 @@ hr {
 }
 
 .backgroundposter {
-  position: absolute;
-  height: 100%;
+  box-shadow: var(--shadow-box);
+  border-radius: 17px;
   width: 100%;
-  z-index: 0;
-  top: 0px;
-  left: 0px;
+}
+
+.about {
+  width: 15rem;
+  height: 13rem;
+  position: absolute;
+  transform: translateY(152px) translateX(-240px);
+  border-radius: 15px;
+  background-color: white;
+  text-align: center;
+  font-family: 'Manrope';
+  font-size: small;
+  color: #222020;
+  word-spacing: 2px;
+  overflow: hidden;
+  padding: 14px 17px 0 17px;
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+.movielink:hover .about {
+  opacity: 1;
 }
