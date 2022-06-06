@@ -337,6 +337,7 @@ a.Telegram {
 .page {
   color: #424242;
   font-family: 'Poppins', sans-serif;
+  cursor: pointer;
 }
 
 .pagination li:hover {
