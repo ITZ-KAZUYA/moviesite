@@ -1,5 +1,6 @@
 
 export const links = [
+    'https://drive.google.com/file/d/1vv87S85s3KrFdy20XXAbKLo_NtL6hMmd/view?usp=sharing',
     'https://drive.google.com/file/d/1pp0MnHfcexVzo4WXYK7CQP4XMAUYglYh/view?usp=sharing',
     'https://drive.google.com/file/d/1fBKvPIfkFnoOrgCtStFjl4WA1lfEtnIk/view?usp=sharing',
     'https://drive.google.com/file/d/1DqNm6hn6A0CQgRXOrMx3K4iFetdNDWN1/view?usp=sharing',
@@ -26,11 +27,12 @@ export const links = [
     'https://drive.google.com/file/d/1F7xywQ9HumHDpsIyyJQ-Nhuhzy-gxyBZ/view?usp=sharing',
     'https://drive.google.com/file/d/1MwGixvBs5HlcrVlQYH_dxb9kXlG9wm6Z/view?usp=sharing',
     'https://drive.google.com/file/d/1c7H6bxp2OTBG8qwGAvQ9zhXLdoXqeiO7/view?usp=sharing',
-    'https://drive.google.com/file/d/1vv87S85s3KrFdy20XXAbKLo_NtL6hMmd/view?usp=sharing',
+
 ]
 
 
 export const nameArray = [
+    'Deep water',
     "Aquaman",
     "Eternals",
     "Black Widow",
@@ -57,5 +59,5 @@ export const nameArray = [
     'Ambulance',
     'Fantastic Beasts: The Secrets of Dumbledore',
     'Radhe shyam',
-    'Deep water'
+
 ];
