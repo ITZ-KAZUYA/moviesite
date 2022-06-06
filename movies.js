@@ -22,9 +22,10 @@ export const links = [
     'https://drive.google.com/file/d/1DRwj-0sf7Uu8yW-ATcmLm1QoUIw-D4v2/view?usp=sharing" target="_blank',
     'https://drive.google.com/file/d/1oO6DDUt_Q7UVusVzqUUwqwXLKXvCRBvW/view?usp=sharing" target="_blank',
     'https://drive.google.com/file/d/1pK_CNwth0J9C_snShHlhxJYJIAI2dYzH/view?usp=sharing" target="_blank',
-    'https://drive.google.com/file/d/1Qo6an11mMQIpfB4YmoXtzjevOSP--IvW/view?usp=sharing " target="_blank',
-    'https://drive.google.com/file/d/1F7xywQ9HumHDpsIyyJQ-Nhuhzy-gxyBZ/view?usp=sharing " target="_blank',
-    'https://drive.google.com/file/d/1MwGixvBs5HlcrVlQYH_dxb9kXlG9wm6Z/view?usp=sharing " target="_blank',
+    'https://drive.google.com/file/d/1Qo6an11mMQIpfB4YmoXtzjevOSP--IvW/view?usp=sharing "target="_blank',
+    'https://drive.google.com/file/d/1F7xywQ9HumHDpsIyyJQ-Nhuhzy-gxyBZ/view?usp=sharing" target="_blank',
+    'https://drive.google.com/file/d/1MwGixvBs5HlcrVlQYH_dxb9kXlG9wm6Z/view?usp=sharing" target="_blank',
+    'https://drive.google.com/file/d/1c7H6bxp2OTBG8qwGAvQ9zhXLdoXqeiO7/view?usp=sharing" target="_blank',
 ]
 
 
@@ -51,9 +52,8 @@ export const nameArray = [
     ' The Last Duel ',
     'Beast (2022) ',
     'Doctor Strange In The Multiverse of Madness',
-    'The Northman 2022',
+    'The Northman',
     'Ambulance',
     'Fantastic Beasts: The Secrets of Dumbledore',
-    'firestarter 2022',
-    'Doctor Strange'
+    'Radhe shyam',
 ];
