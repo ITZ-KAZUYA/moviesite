@@ -1,5 +1,6 @@
 
 export const links = [
+    'https://drive.google.com/file/d/10S6lZaHR5csJnsFiUxbLeogu9DtbY448/view?usp=sharing',
     'https://drive.google.com/file/d/1vv87S85s3KrFdy20XXAbKLo_NtL6hMmd/view?usp=sharing',
     'https://drive.google.com/file/d/1pp0MnHfcexVzo4WXYK7CQP4XMAUYglYh/view?usp=sharing',
     'https://drive.google.com/file/d/1fBKvPIfkFnoOrgCtStFjl4WA1lfEtnIk/view?usp=sharing',
@@ -32,6 +33,7 @@ export const links = [
 
 
 export const nameArray = [
+    'Sarkaru Vaari Paata',
     'Deep water',
     "Aquaman",
     "Eternals",
