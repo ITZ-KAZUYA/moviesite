@@ -1,4 +1,9 @@
 "use strict";
+
+import { links } from './movies.js'
+import { nameArray } from './movies.js'
+
+
 const line01 = document.querySelector(".line1");
 const line02 = document.querySelector(".line2");
 const line03 = document.querySelector(".line3");
@@ -10,6 +15,7 @@ const movieLink = document.getElementById('movielink');
 const movieTitle = document.getElementById('movietitle');
 const moviePoster = document.getElementById('movieposter');
 const submit = document.getElementById('button');
+const pagination = document.querySelector(".pagination");
 
 hamburger.addEventListener("click", function () {
   line01.classList.toggle("firstline");
@@ -28,58 +34,8 @@ overLay.addEventListener("click", function () {
 });
 
 
-const nameArray = ["Aquaman",
-  "Eternals",
-  "Black Widow",
-  "Avengers Infinity War",
-  "Venom Let There Be Carnage",
-  "Shang-Chi And The Legend Of The Ten Rings",
-  'American Psycho',
-  'Black Hawk Down ',
-  'Dune ',
-  'House of Gucci ',
-  'No Time to Die ',
-  'Red Notice 2021 ',
-  'The Kissing Booth ',
-  'The Kissing Booth 2 ',
-  'The Kissing Booth 3 ',
-  'The Contractor 2022 ',
-  'Wyrmwood Apocalypse ',
-  'KGF Chapter 2 ',
-  'Bachchhan Paandey ',
-  ' The Last Duel ',
-  'Beast (2022) ',
-  'Doctor Strange In The Multiverse of Madness',
-  'The Northman 2022',
-];
 
-
-const links = [
-  'https://drive.google.com/file/d/1pp0MnHfcexVzo4WXYK7CQP4XMAUYglYh/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1fBKvPIfkFnoOrgCtStFjl4WA1lfEtnIk/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1DqNm6hn6A0CQgRXOrMx3K4iFetdNDWN1/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1augASDeWk1MNABHf7FTEFdBgYZEbYkuu/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1uBxRpGzsoB1Fe73odSU0ZKPIaK7wXtXU/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1Mxg9TkDfmwFcR_LMUGFo6viZl01F7nOV/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1zZHqIq-SnmQE3ArBgs0RbSvYioeQdc6f/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/15mXJKlnzK3z8q7EJI5D_ZH5wq8sxvPNc/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1DbSq1QgMKPxJvddxlx3DJwJAXgvsyYCr/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1_skuoAVdMCtQv9fMn5ZMJp9UoHiYRNhD/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/12KotLz2gXpkLge0dJsVa6p7IWIxyhBJ3/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1GOHFQShckrCpMM74WBJeZ_M-J1yfeRxw/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/15pOJ6FyS0rMjim1ewizWtQ2LpqLKoY9h/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1OeXIR1fC3MI_kJ-UYvT0se70fPVS85iz/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1i4JMiQ-FeAuAcnSH9PgvGA3-c3C1qJJU/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1Le_qZDOx_BIZybmMdhEds4qjY6no_ghc/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1Yrn_Jt4dP9RN7N7WU7A1xMDNTD6L3glG/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1S2730Zq2RggpW1Ek3ZSMy4GKFWyUVyJA/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1c-LVv4t-49X3LC4WuQqcrBspRey5HGtA/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1DRwj-0sf7Uu8yW-ATcmLm1QoUIw-D4v2/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1oO6DDUt_Q7UVusVzqUUwqwXLKXvCRBvW/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1pK_CNwth0J9C_snShHlhxJYJIAI2dYzH/view?usp=sharing" target="_blank',
-  'https://drive.google.com/file/d/1Qo6an11mMQIpfB4YmoXtzjevOSP--IvW/view?usp=sharing " target="_blank',
-
-]
+// API TO FETHC MOVIE INFORMATION
 
 const movieSearch = async (title) => {
   const res = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=6b2dec73b6697866a50cdaef60ccffcb&query=${title}`);
@@ -90,24 +46,108 @@ const movieSearch = async (title) => {
 }
 
 
+//  FUCNTION TO RENDER 12 ARRAY ELEMENT OF NAEMEARRAY PER PAGE
+
+let page = 1;
+const resultPerPage = 12;
+const searchPage = function (page) {
+  const start = (page - 1) * resultPerPage;
+  const end = page * resultPerPage;
+  return nameArray.slice(start, end)
+}
+
+//  FUCNTION TO RENDER 12 ARRAY ELEMENT OF LINKSARRAY PER PAGE
+const searchPages = function (page) {
+  const start = (page - 1) * resultPerPage;
+  const end = page * resultPerPage;
+  return links.slice(start, end)
+}
+
+const bello = () => {
+  let newLinks = searchPages(page);
+  return newLinks;
+}
 
 
-nameArray.forEach((item, i) => {
-  movieSearch(item).then(data => {
-    const movieLInk = htmllink(data, i)
-    movieContainer.insertAdjacentHTML("beforeend", movieLInk);
+// FUNCTION TO INSERT HTML ELEMENT IN DOM
+
+const hello = () => {
+  searchPage(page).forEach((item, i) => {
+    movieSearch(item).then((data) => {
+      const movieLInk = htmllink(data, i)
+      movieContainer.insertAdjacentHTML("beforeend", movieLInk);
+    })
   })
-})
+}
+hello();
 
+
+// PAGINATION
+
+const NumberOfPage = function () {
+  const numPages = Math.ceil(nameArray.length / resultPerPage);
+  if (parseFloat(page) === 1 & numPages > 1) {
+    return `<li><a data-goto="${page + 1}" class="page">Next</a></li>`;
+  }
+
+  if (parseFloat(page) === numPages) {
+    return `<li><a data-goto="${page - 1}" class="page">Previous</a></li>`
+  }
+
+  if (parseFloat(page) < numPages) {
+    return `<li><a data-goto="${page - 1}" class="page">${page - 1}</a></li>
+    <li><a data-goto="${page + 1}" class="page">${page + 1}</a></li>`
+  }
+
+}
+
+
+// TO INSERT PAGE IN DOM
+
+let pagehtml = NumberOfPage();
+pagination.innerHTML = pagehtml;
+
+
+// TO REMOVE ELEMENTS OF CURRENT PAGE WHEN LOADING NEXT PAGE
+
+function removeAllChildNodes(parent) {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
+}
+
+
+// PAGINATION CLICK EVENT
+
+const paginationButton = (e) => {
+  let element = e.target;
+  if (element.classList.contains('page')) {
+    const goToPage = element.dataset.goto;
+    removeAllChildNodes(movieContainer);
+    page = parseFloat(goToPage);
+    hello();
+    pagehtml = NumberOfPage();
+    pagination.innerHTML = pagehtml;
+    bello();
+  }
+}
+
+pagination.addEventListener('click', paginationButton)
+
+
+
+
+// HTML ELEMENT FOR MOVIES
 
 const htmllink = function (movie, i) {
+
   return `<div class="item">
-        <a class="movielink" href="${links[`${i}`]}">
+        <a class="movielink" href="${bello()[`${i}`]}">
           <img class="backgroundposter"
             src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="">
           <span class="about">${movie.overview}</span>
         </a>
-        <a href="${links[`${i}`]}" class="movieslink">${movie.title}
+        <a href="${bello()[`${i}`]}" class="movieslink">${movie.title}
         </a>
         <div class="date_rating">
           <p class="date">${dateFormatter(movie.release_date)}</p><span class="dot"></span>
@@ -116,7 +156,7 @@ const htmllink = function (movie, i) {
       </div> `
 }
 
-
+// TO FORMAT FETCHED DATE
 
 const dateFormatter = function (date) {
   let currdate = date;
