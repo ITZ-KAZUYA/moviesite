@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -800,4 +801,808 @@ hr {
 
 .movielink:hover .about {
   opacity: 1;
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --shadow-box: 0px 16px 30px -10px rgba(70, 96, 187, 0.1986);
+}
+
+a {
+  text-decoration: none;
+}
+
+.topnav {
+  padding: 12px 0px;
+  background-color: #262626;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 376px;
+  position: relative;
+  left: -315px;
+  padding: 0px 13px;
+  font-size: small;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Verdana, sans-serif;
+}
+
+.navbar li {
+  list-style: none;
+  color: rgb(255, 255, 255);
+  padding: 7px;
+}
+
+.navbar a:hover {
+  color: rgb(154, 157, 160);
+}
+
+ul li a {
+  color: #0e76a8;
+}
+
+ul li a .navmovies:hover {
+  color: black;
+}
+
+.navmovies:hover {
+  color: rgb(7, 7, 7);
+}
+
+a.Download {
+  color: red;
+  font-weight: bolder;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  height: 80px;
+
+}
+
+.primary {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 600;
+
+  width: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  background: white;
+  position: fixed;
+  z-index: 2;
+  padding: 0px 94px 0px 100px;
+  height: inherit;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: var(--shadow-box);
+}
+
+.main::before {
+  content: ' ';
+  background-image: url(https://i.ibb.co/CzbygSZ/D-moviesand-tv-shows.png);
+  background-repeat: no-repeat;
+  height: 109px;
+  left: -13px;
+  top: -61px;
+  width: 122px;
+  position: fixed;
+  background-size: 130px;
+  cursor: pointer;
+  animation-name: logo0;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-in-out;
+  z-index: 3;
+}
+
+.primary li {
+  list-style: none;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.primary li a {
+  color: hsl(227, 35%, 25%);
+  font-family: Manrope;
+  letter-spacing: 0.3px;
+  font-weight: 800;
+}
+
+.primary li:hover .lineline {
+  width: 100%;
+}
+
+.lineline {
+  display: block;
+  border: none;
+  height: 2px;
+  background-color: #232958;
+  width: 0;
+  position: relative;
+  top: 3px;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.dropdown {
+  display: none;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 6px #d7d5d0;
+  margin-top: 6px;
+  z-index: 2;
+  padding: 5px;
+
+
+}
+
+.dropdown ul li {
+  padding-left: 9px;
+  padding-right: 50px;
+  margin-top: 3px;
+
+
+}
+
+.dropdown ul li a {
+  color: black;
+  font-size: 18px;
+
+}
+
+.dropdown ul li:hover {
+  background-color: white;
+  box-shadow: var(--shadow-box);
+  transform: translateX(5px);
+  transition-duration: 0.19s;
+  transition-timing-function: ease-in-out;
+}
+
+.primary li:hover .dropdown {
+  display: block;
+}
+
+@keyframes logo0 {
+  0% {
+    transform: translate(0, 30px);
+  }
+
+  50% {
+    transform: translate(0, 36px);
+  }
+
+  100% {
+    transform: translate(0, 30px);
+  }
+}
+
+.empty {
+  height: 10px;
+}
+
+.notification {
+  display: flex;
+  justify-content: center;
+  margin: 14px 58px;
+  border-radius: 12px;
+  align-items: center;
+  font-size: 21px;
+  font-family: revert;
+  font-weight: 600;
+  color: dimgray;
+  background-color: white;
+  box-shadow: 0px 0px 8px #8f8f8f;
+  padding: 5px;
+}
+
+a.Telegram {
+  color: rgb(11, 174, 250);
+  font-size: 21px;
+  font-family: revert;
+  font-weight: 600;
+}
+
+.container2 {
+  background-color: #dde1e7;
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 0fr));
+  justify-content: center;
+  gap: 136px 20px;
+  padding: 32px;
+
+}
+
+.item {
+  width: 15rem;
+  height: 21rem;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: 5s;
+  transition-timing-function: ease-in-out;
+  align-items: center;
+
+
+}
+
+.item:hover {
+  transform: scale(0.93);
+}
+
+
+.movieslink {
+  color: #2F2F33;
+  font-size: 17px;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 0px;
+}
+
+.date_rating {
+  display: flex;
+  font-family: "DM Sans", sans-serif;
+  align-items: center;
+  gap: 9px;
+  color: #000000a1;
+  font-size: 13px;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #424242;
+  border-radius: 50%;
+}
+
+
+
+
+@media (max-width: 800px) {
+  .mainbar {
+    display: block;
+    margin-left: 140px;
+    margin-right: 27px;
+    width: fit-content;
+    z-index: 1;
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  .childbar {
+    background: #e9e9e1;
+    width: fit-content;
+    justify-content: center;
+    border-radius: 26px;
+    padding: 3px 8px 3px 11px;
+    margin-top: 4px;
+    margin-right: -42px;
+    font-size: 11px;
+
+  }
+}
+
+.container-page {
+  background-color: #dde1e7;
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 35px;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  width: fit-content;
+  height: 80px;
+  border: 1px solid #dde1e7;
+  margin: auto;
+  place-items: center;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.pagination li {
+  padding: 22px;
+  margin-left: 14px;
+  margin-right: 14px;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94 104 121 / 29%);
+  border-radius: 3px;
+  line-height: 5px;
+}
+
+.page {
+  color: #424242;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.pagination li:hover {
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+@media (max-width: 700px) {
+  .pagination {
+    display: flex;
+    list-style: none;
+    width: fit-content;
+    height: 100%;
+    border: 1px solid #dde1e7;
+    margin: auto;
+    place-items: center;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  }
+
+  .pagination li {
+    padding: 9px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94 104 121 / 29%);
+    border-radius: 3px;
+    line-height: 16px;
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  background-color: rgb(85 87 94);
+  justify-content: center;
+  margin: 0px;
+  align-items: center;
+  height: 250px;
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  margin: 15px;
+  transition: 1s;
+}
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 1s;
+  text-align: center;
+}
+
+.social-btn:hover {
+  width: 158px;
+  border-radius: 8px;
+}
+
+.social-btn:hover span {
+  padding: 2px;
+  width: max-content;
+}
+
+#facebook svg {
+  fill: #0e76a8;
+}
+
+#github {
+  fill: #333;
+}
+
+.social-btn a {
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer::before {
+  content: '';
+  background-image: url(https://i.ibb.co/jf94VMJ/D-moviesand-tv-shows-1.png);
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 44%;
+  width: 20%;
+}
+
+@media screen and (max-width: 700px) {
+  .footer::before {
+    content: '';
+    background-image: url(https://i.ibb.co/jf94VMJ/D-moviesand-tv-shows-1.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30%;
+    width: 20%;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(85 87 94);
+  background-color: black;
+  opacity: 0.7;
+  color: aliceblue;
+  height: fit-content;
+  align-items: center;
+  font-family: cursive;
+  padding-bottom: 11px;
+  padding-top: 11px;
+}
+
+.selfWebsite {
+  color: #b4dcff;
+  font-family: cursive;
+}
+
+.selfWebsite:hover {
+  font-size: 18px;
+}
+
+p#copyrightbox {
+  height: fit-content;
+  font-family: serif;
+}
+
+.line {
+  border: 2px solid white;
+  width: 50%;
+}
+
+hr {
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  margin-top: 113px;
+  background-color: #bdbdbd;
+  border: none;
+  height: 2px;
+}
+
+@media screen and (max-width: 700px) {
+  hr {
+    width: 74%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+    position: absolute;
+    margin-top: 113px;
+    background-color: #bdbdbd;
+    border: none;
+  }
+}
+
+.hamburger-container {
+  height: 24px;
+  width: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 35px 0 0px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  position: fixed;
+  right: 10px;
+
+}
+
+.hamburger-container .line {
+  height: 4px;
+  width: 100%;
+  background: #0e2431;
+  border: none;
+  border-radius: 22px;
+  transition: 0.3s;
+  transition-timing-function: linear;
+  cursor: pointer;
+
+
+
+}
+
+.firstline {
+  transform: rotate(40deg) translate(6px, 8px);
+
+}
+
+.secondline {
+  opacity: 0;
+}
+
+.thirdline {
+  transform: rotate(-39deg) translate(6px, -8px);
+
+}
+
+.hamburgurnavbar ul li a {
+  color: #000;
+}
+
+.hamburgurnavbar {
+
+  width: 30%;
+  height: 100%;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 1;
+  background: rgb(243, 243, 243);
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
+  overflow: scroll;
+  z-index: 2;
+  list-style: none;
+}
+
+
+
+.hamburgurnavbarjava {
+  left: 70%;
+
+}
+
+.childhamburgar {
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30%;
+  margin-left: 34px;
+  margin-right: 34px;
+  background-color: #ffffff;
+  box-shadow: var(--shadow-box);
+  border-radius: 10px;
+}
+
+
+
+.childhamburgar li {
+  width: 80%;
+  text-align: center;
+  box-shadow: #ededed 0px 1px 0px;
+  padding-bottom: 13px;
+}
+
+.childhamburgar li a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 19px;
+  font-family: Manrope;
+  color: hsl(227, 35%, 25%);
+}
+
+.childhamburgar li a:hover {
+  color: black;
+  font-size: 20px;
+  ;
+}
+
+.childhamburgar2 {
+  display: flex;
+  height: 70vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 14%;
+  margin-left: 34px;
+  margin-right: 34px;
+  background-color: #ffffff;
+  box-shadow: var(--shadow-box);
+  border-radius: 10px;
+  margin-bottom: 75px;
+}
+
+
+
+.childhamburgar2 li {
+  width: 80%;
+  text-align: center;
+  box-shadow: #ededed 0px 1px 0px;
+  padding-bottom: 13px;
+}
+
+.childhamburgar2 li a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 19px;
+
+  font-family: Manrope;
+  color: hsl(227, 35%, 25%);
+}
+
+.childhamburgar2 li a:hover {
+  color: black;
+  font-size: 20px;
+  ;
+}
+
+
+
+
+@media screen and (max-width:700px) {
+  .primary {
+    display: none;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 47vh;
+  }
+
+
+  .main::before {
+    content: ' ';
+    background-image: url(https://i.ibb.co/CzbygSZ/D-moviesand-tv-shows.png);
+    background-repeat: no-repeat;
+    height: 50%;
+    left: 24px;
+    top: -55px;
+    width: 69%;
+    position: absolute;
+    background-size: 328px;
+    cursor: pointer;
+    animation-name: logo0;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in-out;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+
+  .hamburgurnavbar {
+    width: 75%;
+    min-height: 100%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    background: rgb(243, 243, 243);
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
+    z-index: 2;
+  }
+
+
+  .hamburgurnavbarjava {
+    left: 25%;
+
+  }
+
+  .childhamburgar {
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 85%;
+    margin-left: 34px;
+    margin-right: 34px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px;
+    border-radius: 10px;
+  }
+
+  .hamburger-container {
+    height: 24px;
+    width: 51px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 35px 0 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    position: absolute;
+  }
+
+
+  .hamburger-container .line {
+    height: 4px;
+    width: 100%;
+    background: #0e2431;
+    border: none;
+    border-radius: 22px;
+    transition: 0.3s;
+    transition-timing-function: linear;
+    cursor: pointer;
+
+
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(0px);
+  z-index: 2;
+}
+
+
+
+
+.hidden {
+  display: none;
+}
+
+.backgroundposter {
+  box-shadow: var(--shadow-box);
+  border-radius: 17px;
+  width: 100%;
+}
+
+.about {
+  width: 15rem;
+  height: 13rem;
+  position: absolute;
+  transform: translateY(152px) translateX(-240px);
+  border-radius: 15px;
+  background-color: white;
+  text-align: center;
+  font-family: 'Manrope';
+  font-size: small;
+  color: #222020;
+  word-spacing: 2px;
+  overflow: hidden;
+  padding: 14px 17px 0 17px;
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+.movielink:hover .about {
+  opacity: 1;
+>>>>>>> 90a98e8114b8f6811d2f651b1e49f9d06723a506
 }
