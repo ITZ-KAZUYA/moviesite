@@ -96,6 +96,7 @@ const NumberOfPage = function () {
 
   if (parseFloat(page) < numPages) {
     return `<li><a data-goto="${page - 1}" class="page">${page - 1}</a></li>
+    <li id="currpagelist"><a data-goto="${page}" class="page currpage">${page}</a></li>
     <li><a data-goto="${page + 1}" class="page">${page + 1}</a></li>`
   }
 

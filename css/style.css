@@ -326,7 +326,7 @@ a.Telegram {
 }
 
 .pagination li {
-  padding: 22px;
+  padding: 22px 0 22px 0;
   margin-left: 14px;
   margin-right: 14px;
   box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94 104 121 / 29%);
@@ -338,6 +338,7 @@ a.Telegram {
   color: #424242;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
+  padding: 14px 29px 13px 29px;
 }
 
 .pagination li:hover {
@@ -800,4 +801,12 @@ hr {
 
 .movielink:hover .about {
   opacity: 1;
+}
+
+#currpagelist {
+  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgb(94 104 121 / 29%);
+}
+
+.currpage {
+  pointer-events: none;
 }
