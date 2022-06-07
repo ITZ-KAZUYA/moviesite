@@ -1,5 +1,8 @@
 
 export const links = [
+    'https://drive.google.com/file/d/1Bxob7XsQdzNw-n0uhmjRFZKMFsvFoM79/view?usp=sharing',
+    'https://drive.google.com/file/d/1nxTEuK34Pm9NHSAdRaPMujy4CmomDGzK/view?usp=sharing',
+    'https://drive.google.com/file/d/1zh27_NXLzzTF-6B5PvbGLWdakpKth-ZF/view?usp=sharing',
     'https://drive.google.com/file/d/1GX-2TisTS1NNeQPSRq_CPCPI3YaBufHy/view?usp=sharing',
     'https://drive.google.com/file/d/1tdukoeRI2YrQcHkZSor7Y3kk0a-zEaHY/view?usp=sharing',
     'https://drive.google.com/file/d/1t8vfZSTFKQl082L5BWCZfAYifCwId0ZY/view?usp=sharing',
@@ -40,6 +43,9 @@ export const links = [
 
 
 export const nameArray = [
+    'redemption day',
+    'The Kings Man',
+    'Without Remorse',
     'John wick',
     'The Equalizer 2',
     'The Equalizer',
