@@ -144,7 +144,7 @@ const htmllink = function (movie, i) {
   return `<div class="item">
         <a class="movielink" href="${bello()[`${i}`]}" target="_blank">
           <img class="backgroundposter"
-            src="https://image.tmdb.org/t/p/w500/${movie.poster_path}"  alt="">
+            src="https://image.tmdb.org/t/p/w500/${movie.poster_path}"  alt="${movie.title}">
           <span class="about">${movie.overview}</span>
         </a>
         <a href="${bello()[`${i}`]}" target="_blank" class="movieslink">${movie.title}
