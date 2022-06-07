@@ -1,5 +1,12 @@
 
 export const links = [
+    'https://drive.google.com/file/d/1GX-2TisTS1NNeQPSRq_CPCPI3YaBufHy/view?usp=sharing',
+    'https://drive.google.com/file/d/1tdukoeRI2YrQcHkZSor7Y3kk0a-zEaHY/view?usp=sharing',
+    'https://drive.google.com/file/d/1t8vfZSTFKQl082L5BWCZfAYifCwId0ZY/view?usp=sharing',
+    'https://drive.google.com/file/d/1W0MDF748YK5UBL_AnVVTvcOY16KMHpF4/view?usp=sharing',
+    'https://drive.google.com/file/d/1-h5-EkyBgAMbze6VpiYPrCO4V3k7wvd3/view?usp=sharing',
+    'https://drive.google.com/file/d/1uRvKj5relTqs5g-up85_GxQfTGtvvkP6/view?usp=sharing',
+    'https://drive.google.com/file/d/1kTZBCiTlohb8UXO5RFYSH_VVxMwYoVn1/view?usp=sharing',
     'https://drive.google.com/file/d/10S6lZaHR5csJnsFiUxbLeogu9DtbY448/view?usp=sharing',
     'https://drive.google.com/file/d/1vv87S85s3KrFdy20XXAbKLo_NtL6hMmd/view?usp=sharing',
     'https://drive.google.com/file/d/1pp0MnHfcexVzo4WXYK7CQP4XMAUYglYh/view?usp=sharing',
@@ -33,6 +40,13 @@ export const links = [
 
 
 export const nameArray = [
+    'John wick',
+    'The Equalizer 2',
+    'The Equalizer',
+    'The magnificent seven',
+    'The Adam Project',
+    'Nobody',
+    'Sonic the Hedgehog 2',
     'Sarkaru Vaari Paata',
     'Deep water',
     "Aquaman",
