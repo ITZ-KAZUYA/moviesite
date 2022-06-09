@@ -165,3 +165,62 @@ const dateFormatter = function (date) {
   return newDate;
 }
 
+
+
+
+
+const searchBtn = document.getElementById('Layer_1')
+const search = document.querySelector('.search')
+
+
+const lower = nameArray.map(element => {
+  return element.toLowerCase();
+});
+
+const seacfun = function () {
+  let searchContent = search.value.trim().toLowerCase();
+
+  if (lower.includes(searchContent)) {
+    let i = lower.indexOf(searchContent);
+    movieSearch(searchContent).then(searchedMovie => {
+      movieContainer.innerHTML = "";
+      const movieLInk = htmllink(searchedMovie, i)
+      movieContainer.insertAdjacentHTML("beforeend", movieLInk);
+      pagination.classList.add('hidden');
+    })
+
+  }
+  else {
+    console.log("search not found");
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+searchBtn.addEventListener('click', seacfun);
+
+
+
+
+
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === "Enter") {
+    seacfun();
+  }
+
+
+})
