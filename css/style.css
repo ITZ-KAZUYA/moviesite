@@ -526,6 +526,15 @@ hr {
     background-color: #bdbdbd;
     border: none;
   }
+
+
+  .search_container {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    align-items: center;
+  }
+
 }
 
 .hamburger-container {
@@ -680,9 +689,17 @@ hr {
 
 
 @media screen and (max-width:700px) {
+
   .primary {
-    display: none;
+    position: relative;
+    padding: 0px 0px 0px 20px;
   }
+
+  .primary li {
+    display: none;
+
+  }
+
 
   .main {
     display: flex;
@@ -757,7 +774,7 @@ hr {
     border: none;
     cursor: pointer;
     z-index: 3;
-    position: absolute;
+    position: relative;
   }
 
 
