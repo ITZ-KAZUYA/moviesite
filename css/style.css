@@ -857,6 +857,7 @@ hr {
   font-size: 12px;
   font-family: monospace;
   font-weight: 100;
+  padding-left: 15px;
 }
 
 #Layer_1 {
@@ -872,4 +873,20 @@ hr {
 .home {
   width: 18px;
   margin-right: 5px;
+}
+
+.noresult {
+
+  width: 20rem;
+  height: 100%;
+  font-family: system-ui;
+  font-weight: 500;
+  color: #957e7e;
+  font-size: 18px;
+  transform: translateY(55px);
+}
+
+.telereq {
+  font-size: medium;
+  color: #5c5656;
 }

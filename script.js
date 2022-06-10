@@ -46,6 +46,8 @@ const movieSearch = async (title) => {
 }
 
 
+
+
 //  FUCNTION TO RENDER 12 ARRAY ELEMENT OF NAEMEARRAY PER PAGE
 
 let page = 1;
@@ -95,9 +97,9 @@ const NumberOfPage = function () {
   }
 
   if (parseFloat(page) < numPages) {
-    return `<li><a data-goto="${page - 1}" class="page">${page - 1}</a></li>
+    return `<li><a data-goto="${page - 1}" class="page">previous</a></li>
     <li id="currpagelist"><a data-goto="${page}" class="page currpage">${page}</a></li>
-    <li><a data-goto="${page + 1}" class="page">${page + 1}</a></li>`
+    <li><a data-goto="${page + 1}" class="page">Next</a></li>`
   }
 
 }
@@ -130,6 +132,7 @@ const paginationButton = (e) => {
     pagehtml = NumberOfPage();
     pagination.innerHTML = pagehtml;
     bello();
+    search.value = "";
   }
 }
 
@@ -149,6 +152,22 @@ const htmllink = function (movie, i) {
           <span class="about">${movie.overview}</span>
         </a>
         <a href="${bello()[`${i}`]}" target="_blank" class="movieslink">${movie.title}
+        </a>
+        <div class="date_rating">
+          <p class="date">${dateFormatter(movie.release_date)}</p><span class="dot"></span>
+          <p class="rating">${movie.vote_average} ⭐</p>
+        </div>
+      </div> `
+}
+
+const htmllink2 = function (movie, i) {
+  return `<div class="item">
+        <a class="movielink" href="${links[`${i}`]}" target="_blank">
+          <img class="backgroundposter"
+            src="https://image.tmdb.org/t/p/w500/${movie.poster_path}"  alt="${movie.title}">
+          <span class="about">${movie.overview}</span>
+        </a>
+        <a href="${links[`${i}`]}" target="_blank" class="movieslink">${movie.title}
         </a>
         <div class="date_rating">
           <p class="date">${dateFormatter(movie.release_date)}</p><span class="dot"></span>
@@ -182,16 +201,26 @@ const seacfun = function () {
 
   if (lower.includes(searchContent)) {
     let i = lower.indexOf(searchContent);
+    pagination.innerHTML = " ";
     movieSearch(searchContent).then(searchedMovie => {
       movieContainer.innerHTML = "";
-      const movieLInk = htmllink(searchedMovie, i)
+      const movieLInk = htmllink2(searchedMovie, i)
       movieContainer.insertAdjacentHTML("beforeend", movieLInk);
-      pagination.classList.add('hidden');
+      // pagination.classList.add('hidden');
+      let homehtml = `<li><a data-goto="1" class="page">Go To Home</a></li>`
+      pagination.innerHTML = homehtml;
+      search.value = "";
     })
 
   }
   else {
-    console.log("search not found");
+    movieContainer.innerHTML = "";
+    let searchnotfound = `<div class="noresult">Sorry movie not found☹️. <br> Please enter the full name of the movie.<br><br><br>
+    <span class="telereq">You can also request movie <a class="telereqlink" href="https://t.me/Moviesandchats" target="_blank">Here</a></span>
+    </div>`
+    movieContainer.innerHTML = searchnotfound;
+    let homehtml = `<li><a data-goto="1" class="page">Back To Home</a></li>`
+    pagination.innerHTML = homehtml;
   }
 }
 

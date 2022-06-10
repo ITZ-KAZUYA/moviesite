@@ -1,5 +1,6 @@
 
 export const links = [
+    'https://drive.google.com/file/d/1br9a1_Pugxbx60W_SAKk5RW2IlR7tg-h/view?usp=sharing',
     'https://drive.google.com/file/d/1FynefMDBw4hwWGGPUPPUQ8DffnFvfYYg/view?usp=sharing',
     'https://drive.google.com/file/d/1lnS9EA-hkGY2AfzGeVsp9iRRASrwk_L3/view?usp=sharing',
     'https://drive.google.com/file/d/1Bxob7XsQdzNw-n0uhmjRFZKMFsvFoM79/view?usp=sharing',
@@ -34,7 +35,7 @@ export const links = [
     'https://drive.google.com/file/d/1S2730Zq2RggpW1Ek3ZSMy4GKFWyUVyJA/view?usp=sharing',
     'https://drive.google.com/file/d/1c-LVv4t-49X3LC4WuQqcrBspRey5HGtA/view?usp=sharing',
     'https://drive.google.com/file/d/1DRwj-0sf7Uu8yW-ATcmLm1QoUIw-D4v2/view?usp=sharing',
-    'https://drive.google.com/file/d/1oO6DDUt_Q7UVusVzqUUwqwXLKXvCRBvW/view?usp=sharing',
+    'https://drive.google.com/file/d/1t-GK7HS0YeKaA4avLaW8A4uGgFVkIKjn/view?usp=sharing',
     'https://drive.google.com/file/d/1pK_CNwth0J9C_snShHlhxJYJIAI2dYzH/view?usp=sharing',
     'https://drive.google.com/file/d/1Qo6an11mMQIpfB4YmoXtzjevOSP--IvW/view?usp=sharing',
     'https://drive.google.com/file/d/1F7xywQ9HumHDpsIyyJQ-Nhuhzy-gxyBZ/view?usp=sharing',
@@ -45,6 +46,7 @@ export const links = [
 
 
 export const nameArray = [
+    'john wick 2',
     'Eraser Reborn',
     'Oh My Kadavule',
     'redemption day',
@@ -67,19 +69,19 @@ export const nameArray = [
     "Shang-Chi And The Legend Of The Ten Rings",
     'American Psycho',
     'Black Hawk Down ',
-    'Dune ',
+    'Dune',
     'House of Gucci ',
     'No Time to Die ',
-    'Red Notice 2021 ',
+    'Red Notice',
     'The Kissing Booth ',
     'The Kissing Booth 2 ',
     'The Kissing Booth 3 ',
-    'The Contractor 2022 ',
+    'The Contractor',
     'Wyrmwood Apocalypse ',
     'KGF Chapter 2 ',
     'Bachchhan Paandey ',
-    ' The Last Duel ',
-    'Beast (2022) ',
+    'The Last Duel ',
+    'Beast 2022',
     'Doctor Strange In The Multiverse of Madness',
     'The Northman',
     'Ambulance',
